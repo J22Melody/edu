@@ -50,5 +50,5 @@ app.post '/unselect', (req, res) ->
     res.send success: result
 
 # start server
-server = app.listen 3000, ->
+server = app.listen 3002, ->
   console.log 'Listening on port %d', server.address().port
