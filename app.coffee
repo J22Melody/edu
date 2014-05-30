@@ -9,7 +9,7 @@ db = (require './db').db
 # config
 app = express()
 
-app.use((require 'body-parser')())
+app.use (require 'body-parser')()
 
 # common request handle
 app.get '/', (req, res) ->
@@ -21,7 +21,7 @@ app.get '/', (req, res) ->
       done()
     , 1000
   , (notAborted, arr) ->
-    res.send "#{sum}"
+    res.send "#{sum}" 
 
 # api request handle
 app.get '/courses/:desSysId', (req, res) ->
@@ -37,9 +37,9 @@ app.get '/courses/:desSysId', (req, res) ->
             done()
       , (notAborted, arr) ->
         # todo 这个json2xml parser真是坑
-        res.send json2xml([{'course': course}] for course in data)
+        res.send json2xml({'courses':[{'course': course}] for course in data})
     else
-      res.send json2xml([{'course': course}] for course in data)
+      res.send json2xml({'courses':[{'course': course}] for course in data})
 
 app.post '/select', (req, res) ->
   db.select req.body, (result) ->
