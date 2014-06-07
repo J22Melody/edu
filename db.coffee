@@ -11,7 +11,7 @@ selectRecordSchema = new Schema
 
 # selectRecordSchema.index { srcSysId: 1, desSysId: 1,stuId: 1,courseId: 1 }, { unique: true }
 
-SelectRecord = mongoose.model('SelectRecord', selectRecordSchema);
+SelectRecord = mongoose.model('SelectRecord', selectRecordSchema)
 
 exports.db =
   selected: (param, callback) ->

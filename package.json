@@ -10,6 +10,5 @@
     "node-xml2json": "^1.0.0",
     "mongoose": "^3.8.11",
     "async-foreach": "^0.1.3",
-    "body-parser": "^1.2.0"
   }
 }

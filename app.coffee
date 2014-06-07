@@ -21,7 +21,7 @@ app.get '/', (req, res) ->
       done()
     , 1000
   , (notAborted, arr) ->
-    res.send "#{sum}" 
+    res.send "#{sum}"
 
 # api request handle
 app.get '/courses/:desSysId', (req, res) ->
