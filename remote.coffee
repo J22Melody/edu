@@ -4,7 +4,7 @@ xml2json = require 'node-xml2json'
 baseUrl =
   'A': 'https://hidden-peak-7319.herokuapp.com'
   'B': 'http://shrouded-forest-5848.herokuapp.com'
-  'C': 'http://localhost:3005'
+  'C': 'http://vps.jiangzifan.com:3005'
 
 apiUrl =
   'A':
